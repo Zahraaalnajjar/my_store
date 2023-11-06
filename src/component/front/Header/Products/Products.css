@@ -4,53 +4,55 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: rgb(255, 72, 0);
+    background-color: #e4ece7; 
     border-radius: 5px;
 }
 .card{
     width: 300px;
-    height: 400px;
+    /* height: 400px; */
     border: 1px solid black;
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 10px;
+    border-radius: 1px;
+    /* overflow: hidden; */
+    /* padding: 10px; */
     margin: 40px 20px;
     background-color: white;
 }
 .products-image{
     width: 100%;
-    max-width: 300px;
-    min-height: 200px;
+    /* max-width: 300px;
+    min-height: 200px; */
     display: block;
     object-fit: cover;
 }
-.products-name{
+.product-name{
     text-transform: uppercase;
-    margin: 10px 0px;
+    margin:15px 10px;
+    text-align: center;
 }
-.products-price{
-    margin: 10px 0px;
+.product-price{
+    margin: 15px 10px;
     padding-bottom: 20px;
     font-size: 18px;
     line-height: 30px;
-}
+    border-radius: 3px;
+text-align: center;}
 .products-add-button{
     font-weight: 700px;
     font-size: 18px;
     border-radius: 5px;
     border: none;
     outline: none;
-    width: 100%;
+    width: 80%;
     height: 40px;
     display: block;
     cursor: pointer;
     text-transform: uppercase;
-    margin: 10px auto;
+    margin: 15px auto;
     color: white;
-    background-color: black;
+    background-color: #6B4B36;
 }
 .products-add-button:hover{
-    background-color: red;
+    background-color: #A78363;
 }
 .products-add-button:active{
     transform: translateY(2px);

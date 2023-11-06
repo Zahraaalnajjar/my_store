@@ -1,11 +1,76 @@
-.Signup{
-    margin: 0 auto;
+.container {
+    margin: 20px auto;
     width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 700;
-}
+    height: 100vh;
+    background-color: #e4ece7;
+  }
+  
+  .signup-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    background-color: #f9f9f9;
+    height: 500px;
+  }
+  
+  .signup-card h2 {
+    text-align: center;
+    margin-top: 0;
+    font-family: Arial, sans-serif; /* Change the font family */
+    padding: 10px; /* Add padding to create a box */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

@@ -6,16 +6,16 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    background-color: brown;
+    background-color: #69733B ;
     min-height: 80px;
     width: 80%;
 }
 .logo{
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: white;
     padding-left: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
 }
 .header-links{
     display: flex;
@@ -30,7 +30,8 @@
     text-transform: uppercase;
     color: white;
     padding: 0px 15px;
+
 }
 .header-links ul li a:hover {
-    color: rgb(255, 0, 0);
+    color:rgb(186, 176, 143) ;
 }

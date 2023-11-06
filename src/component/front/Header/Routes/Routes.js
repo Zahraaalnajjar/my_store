@@ -1,20 +1,24 @@
 import React from 'react'
 import Products from '../Products/Products'
 import Signup from '../Signup/Sign';
-import { Route,Switch } from 'react-router-dom'
-const Routes = ({productItem}) => {
+import Card from '../Card/Card';
+import { Route,Routes } from 'react-router-dom'
+const RoutesComponents = ({productItem, cartItems, handleAddProduct, handleRemoveProduct, handleCartCleaner}) => {
   return (
     <div>
-        <Switch>
-            <Route path='/' exact>
-                <Products productItem={productItem}/>
+        <Routes>
+            <Route path='/' exact element={<Products productItem={productItem} handleAddProduct={handleAddProduct}/>}>
             </Route>
-            <Route path='/signup' exact>
-                <Signup/>
+            <Route path='/signup'element={<Signup/>}>
             </Route>
-        </Switch>
+            <Route path='/cart' element={<Card cartItems={cartItems} handleAddProduct={handleAddProduct}
+            handleRemoveProduct={handleRemoveProduct}
+            handleCartCleaner={handleCartCleaner}/>}>
+        </Route>
+        </Routes>
+        
     </div>
   )
 }
 
-export default Routes
+export default RoutesComponents
